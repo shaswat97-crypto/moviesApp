@@ -1,0 +1,252 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-image: url('https://th.bing.com/th/id/R.cb3ea77bc303d8e379aca0c0916cafac?rik=Y6DYZIYKjjA3ag&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2fa%2f9%2f2%2f29702.jpg&ehk=XzBkKN86zXbM%2fLyfdNITGljJEUEH%2blam0UL%2btdeZRA8%3d&risl=&pid=ImgRaw&r=0');
+  background-attachment: fixed;
+}
+
+a,
+i {
+  cursor: pointer;
+}
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.637);
+}
+
+.appName {
+  font-size: 2rem;
+  color: rgba(245, 222, 179, 0.863);
+  border: 1px solid rgba(245, 222, 179, 0.863);
+  border-radius: 3px;
+  padding: 5px 10px;
+  font-weight: bold;
+  box-shadow: 0px 0px 2px rgba(245, 222, 179, 0.863);
+}
+
+.card {
+  border: none;
+}
+
+.fav {
+  color: rgba(245, 222, 179, 0.863);
+  font-weight: bold;
+  border: 1px solid rgba(245, 222, 179, 0.863);
+  padding: 4px 8px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px rgba(245, 222, 179, 0.863);
+
+}
+
+img {
+  object-fit: cover;
+  /* object-position: center; */
+  height: 100%;
+  width: 100%;
+}
+
+.bannerCard {
+  height: 60vh;
+  position: relative;
+}
+
+.bannerCard .overlay {
+  z-index: 10;
+}
+
+.cardImg {
+  position: relative;
+  height: 100%;
+  /* border: 1px solid black */
+}
+
+#trending {
+  text-align: center;
+  margin: 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: rgba(245, 222, 179, 0.863);
+  font-size: 2rem;
+  padding: 8px;
+  border: 1px solid rgba(245, 222, 179, 0.863);;
+  /* background-color: rgba(0, 0, 0, 0.705); */
+
+}
+
+.cardBody {
+  position: absolute;
+  bottom: 4rem;
+  left: 1rem;
+  color: rgba(245, 222, 179, 0.863);
+  z-index: 20;
+}
+
+.movCont {
+  padding: 1rem;
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.705);
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.bannerCardMov {
+  /* margin: 1px; */
+  margin-bottom: 20px;
+  width: 18%;
+  height: 40vh;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  /* box-shadow: 0px 0px 1.5px wheat; */
+
+}
+
+.but {
+  background-color: rgba(17, 17, 17, 0.849);
+  color: rgba(245, 222, 179, 0.863);
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.541);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.movName {
+  padding: 10px;
+  top: 5px;
+  left: 5px;
+  position: absolute;
+  font-size: 1rem;
+  color: rgba(245, 222, 179, 0.863);
+}
+
+.cardImgMov {
+  height: 100%;
+  width: 100%;
+}
+
+.buttonCont {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+
+.movRow td {
+  vertical-align: middle;
+}
+
+.tableCont {
+  /* margin-top: 15px; */
+  min-height: 70vh;
+  padding-right: 10px;
+}
+
+th,
+td {
+  color: rgba(245, 222, 179, 0.863);
+
+}
+
+.row {
+  width: 99vw;
+  overflow: hidden;
+}
+
+.input-group {
+  padding-right: 10px;
+  margin-top: 1.3rem;
+}
+
+.list-group {
+  padding: 10px;
+  padding-right: 0px;
+  margin-top: 15px;
+}
+
+.currentGenre {
+  background-color: rgba(245, 222, 179, 0.863);
+  color: rgba(0, 0, 0, 0.897);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.otherGenre {
+  background-color: rgba(0, 0, 0, 0.87);
+  color: rgba(245, 222, 179, 0.863);
+  cursor: pointer;
+}
+
+.pagin {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.705);
+}
+
+@media screen and (max-width:768px) {
+  .bannerCardMov {
+    width: 23%;
+  }
+}
+
+@media screen and (max-width:550px) {
+  .bannerCardMov {
+    width: 48%;
+  }
+}
